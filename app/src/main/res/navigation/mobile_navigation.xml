@@ -3,33 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/homeFragment">
+
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/homeFragment"
         android:name="au.edu.unimelb.wheresdanny.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/navigation_search"
-        android:name="au.edu.unimelb.wheresdanny.search.SearchFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/addPostFragment"
+        android:name="au.edu.unimelb.wheresdanny.add_post.AddPostFragment"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" />
+    <fragment
+        android:id="@+id/chatScreenFragment"
+        android:name="au.edu.unimelb.wheresdanny.chat.ChatScreenFragment"
+        android:label="fragment_chat_screen"
+        tools:layout="@layout/fragment_chat_screen" />
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="au.edu.unimelb.wheresdanny.calender.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="au.edu.unimelb.wheresdanny.profile.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="au.edu.unimelb.wheresdanny.chat.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/createWorkshopFragment"
+        android:name="au.edu.unimelb.wheresdanny.workshops.CreateWorkshopFragment"
+        android:label="fragment_create_workshop"
+        tools:layout="@layout/fragment_create_workshop" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="au.edu.unimelb.wheresdanny.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard" />
-
     <fragment
-        android:id="@+id/navigation_profile"
+        android:id="@+id/editAccountFragment"
+        android:name="au.edu.unimelb.wheresdanny.profile.EditAccountFragment"
+        android:label="fragment_edit_account"
+        tools:layout="@layout/fragment_edit_account" />
+    <fragment
+        android:id="@+id/mentorsListFragment"
+        android:name="au.edu.unimelb.wheresdanny.find_mentor.MentorsListFragment"
+        android:label="fragment_mentors_list"
+        tools:layout="@layout/fragment_mentors_list" />
+    <fragment
+        android:id="@+id/notificationsFragment"
         android:name="au.edu.unimelb.wheresdanny.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/navigation_search"
-        android:name="au.edu.unimelb.wheresdanny.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/profileFragment"
+        android:name="au.edu.unimelb.wheresdanny.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="au.edu.unimelb.wheresdanny.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/searchFragment"
+        android:name="au.edu.unimelb.wheresdanny.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/workshopsFragment"
+        android:name="au.edu.unimelb.wheresdanny.workshops.WorkshopsFragment"
+        android:label="fragment_workshops"
+        tools:layout="@layout/fragment_workshops" />
 </navigation>

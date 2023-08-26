@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'au.edu.unimelb.wheresdanny'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "au.edu.unimelb.wheresdanny"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

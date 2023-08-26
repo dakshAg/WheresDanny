@@ -28,12 +28,13 @@
         app:startIconDrawable="@drawable/round_location_on_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputText"
+        android:id="@+id/inputText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="5" />
@@ -60,10 +62,11 @@
         android:hint="Tags"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        app:layout_constraintTop_toBottomOf="@+id/inputText1"
         app:startIconDrawable="@drawable/round_tag_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTags"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>

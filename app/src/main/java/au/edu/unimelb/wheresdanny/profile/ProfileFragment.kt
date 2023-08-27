@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import au.edu.unimelb.wheresdanny.R
+import au.edu.unimelb.wheresdanny.data.User
 import au.edu.unimelb.wheresdanny.databinding.FragmentAddPostBinding
 import au.edu.unimelb.wheresdanny.databinding.FragmentProfileBinding
 
@@ -17,12 +18,19 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentProfileBinding.inflate(inflater,container,false);
+        binding = FragmentProfileBinding.inflate(inflater, container, false);
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+    }
+
+    private fun onDataLoaded(user: User) {
+        binding.txtName.text = user.name
+        binding.txtAbout.text = user.about
+        binding.txtHashtags.text = user.hashtags
+        binding.txtCurrentPosition.text = user.currentJobTitle
     }
 }
